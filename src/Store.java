@@ -1,7 +1,4 @@
 import java.io.IOException;
-import java.io.OutputStream;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class Store
@@ -12,11 +9,11 @@ public class Store
     public static void main(String[] args) throws IOException {
         Scanner input = new Scanner(System.in);
         DisplayMenu();
-        List<String> test = new ArrayList<>();
-        test.add("iPhone");
-        test.add("1000");
-        test.add("10");
-        textbackend.appendTextToFile(test);
+//        List<String> test = new ArrayList<>();
+//        test.add("iPhone");
+//        test.add("1000");
+//        test.add("10");
+//        textbackend.appendTextToFile(test);
 
         while(sessionActive) {
             MenuInputChoice(input);
@@ -33,7 +30,7 @@ public class Store
             input.next();
         }
         switch (userInput) {
-            case 1 -> textbackend.AddItemToItemstxt(consoleui.AddItemInput());
+            case 1 -> textbackend.appendTextToFile(consoleui.AddItemInput());
             case 2 -> consoleui.UpdateItemQuantity(); //any time you use these put consoleui. becuase that's the file they're in
             case 3 -> consoleui.RemoveItem();
             case 4 -> consoleui.OutputItemList(textbackend.readTransactionsFile());
