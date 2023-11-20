@@ -9,11 +9,6 @@ public class Store
     public static void main(String[] args) throws IOException {
         Scanner input = new Scanner(System.in);
         DisplayMenu();
-//        List<String> test = new ArrayList<>();
-//        test.add("iPhone");
-//        test.add("1000");
-//        test.add("10");
-//        textbackend.appendTextToFile(test);
 
         while(sessionActive) {
             MenuInputChoice(input);

@@ -24,8 +24,6 @@ public class consoleui { // do not put textbackendui. things in here
         }
         newItemLine.add(String.valueOf(scanner.nextInt()));
 
-
-
         return newItemLine;
     }
     public static void OutputItemList(List<String> itemList) {
@@ -34,6 +32,12 @@ public class consoleui { // do not put textbackendui. things in here
     }
     public static void UpdateItemQuantity() {
         System.out.println("Item quantity updated\n");
+
+
+
+
+
+
     }
 
     public static void RemoveItem() {
