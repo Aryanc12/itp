@@ -7,6 +7,7 @@ public class Store
     static boolean sessionActive = true;
 
     public static void main(String[] args) throws IOException {
+        textbackend.searchFiles("item4", "items");
         Scanner input = new Scanner(System.in);
         DisplayMenu();
 
@@ -30,7 +31,8 @@ public class Store
             case 3 -> consoleui.RemoveItem();
             case 4 -> consoleui.OutputItemList(textbackend.readTransactionsFile());
             case 5 -> consoleui.OutputItemList(textbackend.readItemsFile());
-            case 6 -> sessionActive = false;
+            case 6 -> consoleui.OutputItemList(textbackend.searchForRow(consoleui.searchItemDesc(),"items"));
+            case 7 -> sessionActive = false;
             default -> System.out.println("Unexpected error occurred, please enter an integer!");
         }
     }
@@ -44,7 +46,7 @@ public class Store
         System.out.println("4. VIEW DAILY TRANSACTION REPORT");
         System.out.println("5. VIEW ITEMS LIST");
         System.out.println("---------------------------------");
-        System.out.println("6. Exit\n");
+        System.out.println("7. Exit\n");
 
     }
 }

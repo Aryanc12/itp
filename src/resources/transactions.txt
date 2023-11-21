@@ -1,3 +1,4 @@
 id,description,qtyChanged,amount(£),stockRemaining,transactionType,date
-00002,bb,12,276000.0,33,19/10/2023
-00010,assaultRifle,3,60.0,7,31/10/2023
+00002,sniperRifle,12,276000.0,2023-08-26
+00010,assaultRifle,3,60.0,7,2023-09-13
+00009,phone,12.0,10,12.0,2023-11-20

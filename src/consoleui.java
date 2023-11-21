@@ -32,12 +32,6 @@ public class consoleui { // do not put textbackendui. things in here
     }
     public static void UpdateItemQuantity() {
         System.out.println("Item quantity updated\n");
-
-
-
-
-
-
     }
 
     public static void RemoveItem() {
@@ -46,5 +40,11 @@ public class consoleui { // do not put textbackendui. things in here
 
     public static void ViewDailyTransactionReport() {
         System.out.println("Report printed\n");
+    }
+
+    public static String searchItemDesc() {
+        System.out.println("Enter item description");
+        Scanner scanner = new Scanner(System.in);
+        return scanner.nextLine();
     }
 }
